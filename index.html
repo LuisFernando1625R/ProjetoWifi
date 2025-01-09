@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
+    <script src="/html/scripts.js" defer></script>
+    <!-- O link favicon, serve para colocar o icone do lado do title.  -->
+    <link rel="shortcut icon" href="/html/img/Icone GLPI.ico" type="image/x-icon" />
+    <title>Wifi-Visitantes</title>
+    <!--Serve para criar um aviso antes do usuário entrar na pagina.    -->
+   <!--  <script>
+     let nomeUsuario = prompt("Por favor,insira o seu nome Completo.");  
+    </script> -->
+  </head>
+
+  <body>
+    
+    <header>
+      <img
+        src="/html/img/logo_da_albras-removebg-preview.png"
+        alt="Logo da Albras"
+      />
+    </header>
+
+    <div class="imgfundo">
+   
+
+      <div>
+        <!--Pega os dados disponibilizados pelo usuario antes dele entrar no site e coloca no site adicionado de uma frase.   -->
+        <i><script>document.write(nomeUsuario + " Seja bem vindo(a) ao wifi de visitantes da Albras.");</script></i>
+
+        <h2> Cadastro de Usuário</h2>
+
+        <form  action="#" method="post">
+          <div>
+            <label class="negrito" for="nome-completo">Nome Completo: </label>
+            <input class="input-padrao"
+              id="nome-completo"
+              type="text"
+              maxlength="40"
+              placeholder=" Digite seu nome completo."
+              required />
+          </div>
+
+          <div>
+            <label class="negrito" for="CPF">CPF: </label>
+            <input class="input-padrao"
+              id="CPF"
+              type="int"
+              maxlength="11"
+              placeholder=" Digite seu CPF,sem os pontos."
+              required />
+          </div>
+
+          <div>
+            <label class="negrito" for="empresa">Empresa: </label>
+            <input class="input-padrao"
+              id="empresa"
+              type="text"
+              maxlength="20"
+              placeholder=" Digite o nome da sua empresa"
+              required/>
+          </div>
+
+          <div class="button"></div>
+
+          <button id="open-modal", type="submit"> Concordo com os  <a href="#">Termos de Uso </a>
+            <input type="checkbox" 
+                   required/>
+          </button>
+          <div id="fade" class="hide"></div>
+          <div id="modal" class="hide">
+            <div class="modal-header">
+              <h2>Leis Gerais de Proteção de Dados - LGPD</h2>
+              <button id="close-modal">Fechar</button>
+            </div>
+            <div class="modal-body"></div>
+            <p>Primeira leixxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            </p>
+            <p>Segunda leixxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            </p>
+            <p>Terceira leixxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+            </p>
+          </div>
+
+           <button type="submit"><a href="/html/TelaLogin.html"> Confirmar</a></button> 
+        </form>
+    </div>
+    </div>
+
+    <footer>
+      <h3>Entre em contato:</h3>
+      <p><strong>CNPJ: </strong> 00.000.000/0001-00</p>
+      <p><strong>WhatApp:</strong> (00) 00000-0000</p>
+      <h6>Metalurgica Albras LTDA</h6>
+    </footer>
+  </body>
+</html>
+
+<!--  <form action="caminho para o back-end" method="post"> -->
