@@ -1,68 +1,129 @@
-img {
-  display: block;
-  margin: auto;
+#DinoAventura{
+  display: flex;
+  margin: 0 auto;
+  height: 300px;/*Tamanho das imagem*/
+  padding: 0%;
+  justify-content: center;
+  margin-top: 1rem;
+  
+  @media(max-width:1024px){
+    #DinoAventura{
+      display:none;
+    }
+  }
 }
-header {
-  background: linear-gradient(to top, #fafaf9, #f5f5f4, #e7e5e4);
-  padding: 3%;
-  margin-bottom: 5%;
-}
-
 body {
-  background: linear-gradient(to top, #e5e5e5, #d4d4d4);
   margin: 0;
   border: 0;
   padding: 1rem; /* 1 rem é igual a 16px, ele normalmente serve para telas onde o espaçamento da fonete é maior*/
+  font-family: 'Roboto', sans-serif; 
+  /*Deixa as letras mais bonitas sem parecer que estão "Quebradas"*/
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
-
-footer {
-  background: linear-gradient(to bottom, #f97316, #ea580c);
-  display: block;
-  margin-top: 5%;
-  margin-bottom: 10%;
+form {
   text-align: center;
-  padding: 2%;
+  justify-content: center;
+  align-items: center;
+  width: 39.8rem; 
+  height:50rem;
+
+  @media(max-width:1024px){
+    width: 22rem; 
+    height:50rem;
+  }
 }
 
-div {
+
+#backgroundSystem {
+  background-image: url("/img/tecnologiaLaranjaFundo.jpg.");
+  background-repeat: no-repeat;
+  background-size: cover;/*Faz com que a imagem ocupe todo o espaço da tela*/
+  height: 100vh;
+  justify-content: center;/*De baixo para cima*/
+  display: flex;/*Pode colocar um item um do lado do outro*/
+  flex-direction: column;
+
+  /* ignorar valores padrões*/
+  box-sizing:border-box;
+}
+
+div {/*"imagem" do fundo*/
   margin: 0 auto;
-  text-align: center, justify;
-  width: 75%;
-  padding: 4%;
+  width: 85%;
+  padding: 0.3%;
+
+  @media(max-width: 1024px) {
+    display: block;
+    margin-top: 1px; 
+  
+  }
+ 
 }
 h2 {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  animation-delay: 10ms;
+  }
+
+h6 {
   text-align: right;
-  padding-right: 10%;
 }
 
-html {
-  font-family: Arial, Helvetica, sans-serif;
+input:houver{
+  opacity: 0;
 }
-div.imgfundo {
-  width: 400px;
-  height: 470px;
-  background-color: #d4d4d4;
-  display: flex;
-  align-items: center; /*Serve para colocar o textyo non centro*/
+
+.main-container {
+  padding:0%;
+   width: 90rem; 
+   height: 50rem;
+  /* background-color: white;   */
+  display: flex;  align-items: center; /*Serve para colocar o texto no centro*/
   justify-content: center;
-  backdrop-filter: blur(200px); /*Serve para colcoar um blur na div*/
-  border-radius: 15px; /*Servw para colocar uma borda arredondada*/
+  border-radius: 15px; /*Serve para colocar uma borda arredondada*/
   box-shadow: 1px 1px 5px 0px gray; /*Serve para colocar uma borda sombreada*/
-}
-/*Configuração para dispositivos móveis
-@media(min-whidth:360px) and (max-width:800px){
-}
-*/
-button {
-  padding: 8px 20px;
-  border-radius: 15px;
-  background-color: #ea580c;
-  color: white; /*cor da letra de dentro do botão*/
+  /*backdrop-filter: blur(100px); Serve para colcoar um blur na div*/
 
+@media(max-width:1024px){
+  width: 25rem;
+  flex-flow: column;
+}
+
+button {
+  padding: 8px 120px;
+  border-radius: 0.3rem; 
+  background-color: #EC6F01;
+  color: white; /*cor da letra de dentro do botão*/
   transition: 0.5s ease;
   margin-top: 2%; /*Serve para dar um espaçamento entre os campos*/
   cursor: pointer;
   border: none;
+}
+
+#btn-enviar{
+  margin-left:0rem;
+  margin-top: 0;
+  padding: 8px 36px;
+  width: 30rem;
+
+  @media(max-width:1024px) {
+    padding: 8px 36px;
+    width: 20rem; /*Comprimento do botão*/
+    margin-left: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+   
+    
+  }
+}
+
+span{
+  color: rgb(58, 58, 253);
+  text-decoration: underline;
+  cursor: pointer;
+  margin-right: 5px; 
 }
 
 .negrito {
@@ -70,32 +131,81 @@ button {
 }
 
 .input-padrao {
-  border: none;
-  padding: 8px 20px;
+  height: 3rem;
+  width: 35rem;
+  /* padding: 10px 150px; */
+  border-radius:0.3rem;
+  background-color: #fafafa;
+  transition: 1s ease; /*Tempo de cada transição ao passar o mouse em cima do botão*/
+
+  
+  @media(max-width:1024px){
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  width: 18rem;
+  height: 2rem;
+}
+}
+.input-esquerda {
+  float: left;
+  width: 10.9rem;
+  display: flex;
+}
+input:hover {
+  border-color: #ea580c;
+}
+
+.container-infos{/*DinoAventura*/
+ background-color: #EC6F01;
+ height: 50.1rem;/*Altura da cor*/
+ width: 45rem;/*Comprimento da cor*/
+ display:flex;
+ border-radius:15px 0px 0px 15px;
+ display: block;
+
+ @media(max-width:1024px){
+  display: none;
+ }
+}
+
+.container-form{/*Cadastro*/
+ height: 50rem;/*Altura*/
+ width: 40rem;/*Comprimento*/
+ display:flex;
+
+ @media(max-width:1024px) {
+  height: 50rem;/*Altura*/
+ width: 21rem;/*Comprimento*/
+ display:flex;
+ padding-left: none;
+ justify-content: center;
+ }
+}
+
+/*//////////////////////////////////////////////////////////////////////////////////*/
+
+/*Carosel*/
+
+.carousel-inner {
+  background-color: #F3A35D;
+  color:white;
+  margin-top: 12rem;
   border-radius: 15px;
-  background-color: #ea580c;
-  color: #fafafa; /*cor da letra de dentro do botão*/
-  transition: 0.5s ease; /*Tempo de cada transição ao passar o mouse em cima do botão*/
+  height:15.5rem;
 }
-/*Serve para fazer a transição da cor do botão do larakja escuro para o laranja claro*/
-.input-padrao:hover {
-  background: #f97316;
+/* .carousel-control-prev{
+  margin-top: 16rem;
 }
-button:hover {
-  background: #f97316;
+.carousel-control-next {
+  margin-top: 16rem;
 }
-/*Serve para mudar a cor da letra dentro do placeholder*/
-.input-padrao::placeholder {
-  color: #fafafa;
-}
+ */
 
-a {
-  text-decoration: none; /*Serve para tirar a linha que fica em baixo do link*/
-  font-size: bold;
-  color: inherit; /*Serve para tirar o azul que fica no texto do link*/
-}
+/*/////////////////////////////////////////////////////////////////////////////*/
 
-/*Configuração da model*/
+
+/*Configuração do modal*/
 
 /* O * serve para pegar todo o HTML e as tags abaixo estão resentando as configuração impostas pelo HTML, para que possamos criar as nossa configuração do zero.*/
 
@@ -103,18 +213,48 @@ h1 {
   padding-bottom: 1rem;
 }
 
-#open-modal {
-  background-color: #ea580c;
+#openModal {
+  display: flex;
+  margin: 0rem 1rem 0rem  0rem;
+  width: 35rem;
+  justify-content: left;
+  align-items:center ;
+
+  @media(max-width: 1024px) {
+  display: block;
+  margin: 1rem 0rem 0.6rem 0rem;
+  width: 20rem;
+
+  }
 }
-button:hover {
+#display-flex {
+  display:flex;
+  justify-content: left;
+  align-items: center;
+  width:35rem;
+  margin: 1rem 1rem 0rem 3rem;
+
+  @media(max-width:1024px) {
+    display:block;
+    width:20rem;
+    height: 9rem;
+    margin:1rem 1rem 0rem ;
+    justify-content: center;
+    align-tens: center;
+  }
+}
+
+span:hover {
   opacity: 1;
 }
+
 #close-modal,
 #modal {
   transition: 0.5s;
   opacity: 1;
   pointer-events: all;
 }
+
 #close-modal {
   position: fixed;
   top: 0;
@@ -123,23 +263,42 @@ button:hover {
   background-color: #ea580c;
   z-index: 5; /*Serve para colocar o botão na frente dos outros elementos, impossibilitando que o usuário clique em alguma coisa fora do model*/
 }
+
+#fade {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 5;
+}
+
 #modal {
   position: fixed;
   left: 50%; /*Coloca 50% na esquerda da tela, não deixando o conteudo centralizado*/
   top: 50%; /*Coloca 50% de cima da tela, não deixando o conteudo centralizado*/
-  transform: translate(
-    -50%,
-    -50%
-  ); /*Serev para colocar porcentagem negativa, centralizando o modal no centro*/
+  transform: translate(-50%,-50%); /*Serev para colocar porcentagem negativa, centralizando o modal no centro*/
   background: linear-gradient(to top, #e5e5e5, #d4d4d4);
-  box-shadow: 1px 1px 5px 0px gray;
+  box-shadow: 1px 1px 5px 0px ;
   z-index: 10;
-  width: 410px;
-  height: 480px;
+  width: 50rem;
+  height: 35rem;
   max-width: 95%; /*Serve para colocar um limite de 90%, caso a tela seja menor de 500px ele deixa em 90%*/
   padding: 1.2rem;
   border-radius: 0.5rem;
+  align-items: center;
+  justify-content: center;/*De baixo para cima*/
+
 }
+#fade,
+#modal {
+  transition: 0.5s;
+  opacity: 1;
+  pointer-events: all;
+ 
+}
+
 .modal-header {
   display: flex; /*Serve para deixar um item ao lado do outro*/
   justify-content: space-between; /*Serve para deixar espaçamento entre os itens*/
@@ -147,17 +306,24 @@ button:hover {
   border-bottom: 1px solid #acacac; /*Serve parea colcoar um borda entre o titulo do modal e o conteudo*/
   margin-bottom: 1rem;
   padding-bottom: 1rem;
+  flex-direction: column;
 }
+
 .modal-body p {
   margin-bottom: 1rem;
 }
+
 /*Esta escondendo o modal e impossibilitando o clique fora do modal*/
 #modal.hide,
 #fade.hide {
   opacity: 0;
   pointer-events: none;
 }
+
 /*Fazendo com que o modal venha de cima para baixo*/
 #modal.hide {
-  top: 0;
+  top: 0px;
 }
+}
+
+

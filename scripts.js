@@ -1,6 +1,6 @@
 /*Esta chamando as tags do html a tribuindo no js */
-const openModalButton = document.querySelector("#open-modal");
-const closeModalButton = document.querySelector("#close-modal");
+const openModalButton = document.querySelector("#openModal");
+const closeModalButton = document.querySelector("#closeModal");
 const modal = document.querySelector("#modal");
 const fade = document.querySelector("#fade");
 

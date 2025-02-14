@@ -1,104 +1,197 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script><!-- Biblioteca dos icones  -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><!--Biblioteca do carosel-->
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">  <!--Serve para não deixar a fonte "feia" como se estivesse bugada -->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    
     <link rel="stylesheet" type="text/css" href="style.css" media="screen" />
-    <script src="/html/scripts.js" defer></script>
+    <script src="/scripts.js" defer></script>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer ></script> -->
     <!-- O link favicon, serve para colocar o icone do lado do title.  -->
-    <link rel="shortcut icon" href="/html/img/Icone GLPI.ico" type="image/x-icon" />
+    <link rel="shortcut icon" href="/Form/html/img/Icone GLPI.ico" type="image/x-icon"/>
     <title>Wifi-Visitantes</title>
-    <!--Serve para criar um aviso antes do usuário entrar na pagina.    -->
-   <!--  <script>
-     let nomeUsuario = prompt("Por favor,insira o seu nome Completo.");  
-    </script> -->
   </head>
 
-  <body>
-    
-    <header>
-      <img
-        src="/html/img/logo_da_albras-removebg-preview.png"
-        alt="Logo da Albras"
-      />
-    </header>
+  <body id="backgroundSystem">
+  
+    <main>
+      <div class="main-container">
+        <div class="container-infos">
+        <div id="DinoAventura">
+          <img id="DinoAventura" src="/img/ImagemNovaDinoAventura.png" alt="DinoAventura""><img/>
+        </div>
 
-    <div class="imgfundo">
-   
-
-      <div>
-        <!--Pega os dados disponibilizados pelo usuario antes dele entrar no site e coloca no site adicionado de uma frase.   -->
-        <i><script>document.write(nomeUsuario + " Seja bem vindo(a) ao wifi de visitantes da Albras.");</script></i>
-
-        <h2> Cadastro de Usuário</h2>
-
-        <form  action="#" method="post">
-          <div>
-            <label class="negrito" for="nome-completo">Nome Completo: </label>
-            <input class="input-padrao"
-              id="nome-completo"
-              type="text"
-              maxlength="40"
-              placeholder=" Digite seu nome completo."
-              required />
-          </div>
-
-          <div>
-            <label class="negrito" for="CPF">CPF: </label>
-            <input class="input-padrao"
-              id="CPF"
-              type="int"
-              maxlength="11"
-              placeholder=" Digite seu CPF,sem os pontos."
-              required />
-          </div>
-
-          <div>
-            <label class="negrito" for="empresa">Empresa: </label>
-            <input class="input-padrao"
-              id="empresa"
-              type="text"
-              maxlength="20"
-              placeholder=" Digite o nome da sua empresa"
-              required/>
-          </div>
-
-          <div class="button"></div>
-
-          <button id="open-modal", type="submit"> Concordo com os  <a href="#">Termos de Uso </a>
-            <input type="checkbox" 
-                   required/>
-          </button>
-          <div id="fade" class="hide"></div>
-          <div id="modal" class="hide">
-            <div class="modal-header">
-              <h2>Leis Gerais de Proteção de Dados - LGPD</h2>
-              <button id="close-modal">Fechar</button>
+        <!--Configuração do carosel-->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+      
+              <p><p class="negrito">1 - Preencha os campos com suas informações: </p>
+                 Certifique-se de inserir seus dados pessoais 
+                ou profissionais de forma correta nos campos indicados.
+                Isso pode incluir nome, endereço de e-mail, número de telefone,
+                entre outros detalhes necessários para o registro ou acesso.</p>
+                <br>
             </div>
-            <div class="modal-body"></div>
-            <p>Primeira leixxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            </p>
-            <p>Segunda leixxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            </p>
-            <p>Terceira leixxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-              xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-            </p>
+            <div class="carousel-item">
+             
+              <p><p class="negrito">2 - Peça a um gestor ou ao departamento de T.I para colocar o código:</p>
+                  Se houver a necessidade de inserir um código específico, 
+                 entre em contato com seu gestor ou o departamento de Tecnologia da 
+                 Informação. Eles devem ter acesso ao código necessário ou poderão
+                 auxiliar na obtenção e inserção correta do mesmo.</p>
+                 <br>
+            </div>
+            <div class="carousel-item">
+              <p><p class="negrito">3 - Clique em enviar:</p>Após verificar que todas as informações estão 
+                corretas e que o código foi inserido, procure o botão de "Enviar" 
+                na interface e clique nele para finalizar o processo. 
+                Isso geralmente conclui a ação desejada, seja ela uma inscrição, 
+                registro ou qualquer outra operação administrativa.</p>
+                <br>
+            </div>
+          </div>
+        </div>
+  
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  
+
+
+
+      </div>
+        <div>
+          <!--Pega os dados disponibilizados pelo usuario antes dele entrar no site e coloca no site adicionado de uma frase.   -->
+          <!--<i><script>document.write(nomeUsuario + " Seja bem vindo(a) ao wifi de visitantes da Albras.");</script></i> -->
+
+        <div class="container-form">
+          <form>
+            <div>
+          <h2 class="negrito">Cadastre-se para ter acesso ao Wi-fi.</h2>
+          <h5 class="negrito">Você está entrando como? </h5>
+          <label>
+            <input type="radio" name="conexao" value="visitantes" required checked> Visitantes
+          </label>
+          <label>
+            <input type="radio" name="conexao" value="Colaborador" required> Colaborador
+          </label>
+          </div>
+            <div>
+              <div class="input-esquerda"><label class="negrito" for="nome">Nome: </label></div>
+              <input
+                class="input-padrao"
+                id="nome"
+                type="text"
+                maxlength="30"
+                placeholder=" Digite seu nome..."
+                required
+              />
+            </div>
+            <div>
+              <div class="input-esquerda"><label class="negrito" for="Sobrenome">Sobrenome: </label></div>
+              <input
+                class="input-padrao"
+                id="nome"
+                type="text"
+                maxlength="30"
+                placeholder=" Digite seu Sobrenome..."
+                required
+              />
+            </div>
+            <div>
+             <div class="input-esquerda"> <label class="negrito" for="CPF">CPF: (Apenas números)</label></div>
+              <input
+                class="input-padrao"
+                id="CPF"
+                type="int"
+                maxlength="11"
+                placeholder="00000000000"
+                required
+              />
+            </div>
+            <div>
+             <div class="input-esquerda">
+              <label class="negrito" for="email">E-mail: </label></div>
+              <input
+                class="input-padrao"
+                id="email"
+                type="text"
+                maxlength="40"
+                placeholder=" Digite seu E-mail."
+                required
+              />
+            </div>
+            <div>
+           <div class="input-esquerda"> 
+              <label class="negrito" for="telefone">Telefone: </label></div>
+              <input
+                class="input-padrao"
+                id="telefone"
+                type="text"
+                maxlength="15"
+                placeholder="(00) 00 00000-0000 "
+                required
+              />
+            </div>
+            <div>
+              <div class="input-esquerda"> 
+              <label class="negrito" for="codigo">Código: </label></div>
+              <input
+                class="input-padrao"
+                id="codigo"
+                type="text"
+                maxlength="50"
+                placeholder=" Digite o código de validação."
+                required
+              />
+            </div>
+           <div id="display-flex"> Concordo com os<div id="openModal">
+              Concordo com os<span id="colorLink"> Termos de Uso</span>
+              <input type="checkbox" required/></div>
+            <button id="btn-enviar" id="Confirmar" class="negrito">Confirmar</button>
           </div>
 
-           <button type="submit"><a href="/html/TelaLogin.html"> Confirmar</a></button> 
-        </form>
-    </div>
-    </div>
+            <div id="fade" class="hide"></div>
+            <div id="modal" class="hide">
+              <div class="modal-header">
+                <h2>Leis Gerais de Proteção de Dados - LGPD</h2>
+                <button id="closeModal">Fechar</button>
+              </div>
 
-    <footer>
-      <h3>Entre em contato:</h3>
-      <p><strong>CNPJ: </strong> 00.000.000/0001-00</p>
-      <p><strong>WhatApp:</strong> (00) 00000-0000</p>
-      <h6>Metalurgica Albras LTDA</h6>
-    </footer>
+              <div class="modal-body"></div>
+              <p>
+                Ao acessar a rede sem fio, você reconhece que é maior de idade,
+                leu e compreendeu e concorda em ficar vinculado a este contrato.
+              </p>
+              <p>
+                Você concorda em não usar a rede sem fio para qualquer
+                finalidade ilegal e assume total responsabilidade por seus atos.
+              </p>
+              <p>
+                A rede sem fio é fornecida “como está”, sem garantias de
+                qualquer tipo, expressas ou implícitas.
+              </p>
+            </div>
+           
+          </form>
+        </div>
+       </div>
+      </div>
+    </main>
   </body>
 </html>
-
-<!--  <form action="caminho para o back-end" method="post"> -->
