@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script><!-- Biblioteca dos icones  -->
+    <!--<script src="https://unpkg.com/@phosphor-icons/web@2.1.1"></script> Biblioteca dos icones  -->
 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><!--Biblioteca do carosel-->
+    <!--<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"><Biblioteca do carosel-->
 
-   <link rel="preconnect" href="https://fonts.googleapis.com">  <!--Serve para não deixar a fonte "feia" como se estivesse bugada -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">  <!--Serve para não deixar a fonte "feia" como se estivesse bugada -->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     
@@ -17,7 +17,7 @@
     <script src="/scripts.js" defer></script>
     <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js" defer ></script> -->
     <!-- O link favicon, serve para colocar o icone do lado do title.  -->
-    <link rel="shortcut icon" href="/Form/html/img/Icone GLPI.ico" type="image/x-icon"/>
+    <link rel="shortcut icon" href="/img/Icone GLPI.ico" type="image/x-icon"/>
     <title>Wifi-Visitantes</title>
   </head>
 
@@ -26,11 +26,11 @@
     <main>
       <div class="main-container">
         <div class="container-infos">
-        <div id="DinoAventura">
-          <img id="DinoAventura" src="/img/ImagemNovaDinoAventura.png" alt="DinoAventura""><img/>
+        <div id="albrasConnect">
+          <img id="albrasConnect" src="/img/AlbrasConnect123.png" alt="albrasConnect""><img/>
         </div>
 
-        <!--Configuração do carosel-->
+        <!--Configuração do carosel
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
           <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -65,8 +65,7 @@
                 <br>
             </div>
           </div>
-        </div>
-  
+        </div>-->
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
@@ -82,57 +81,24 @@
         <div class="container-form">
           <form>
             <div>
-          <h2 class="negrito">Cadastre-se para ter acesso ao Wi-fi.</h2>
-          <h5 class="negrito">Você está entrando como? </h5>
-          <label>
+              
+              <img src="/img/imgConnectCell.png" alt="connectCell" id="imgConnectCell">
+          <h1 class="negrito">Cadastre-se para ter acesso ao Wi-fi.</h1>
+          <!-- <label>
             <input type="radio" name="conexao" value="visitantes" required checked> Visitantes
           </label>
           <label>
             <input type="radio" name="conexao" value="Colaborador" required> Colaborador
-          </label>
+          </label>  -->
           </div>
             <div>
-              <div class="input-esquerda"><label class="negrito" for="nome">Nome: </label></div>
+              <div class="input-esquerda"><label class="negrito" for="nome">Nome Completo: </label></div>
               <input
                 class="input-padrao"
                 id="nome"
                 type="text"
                 maxlength="30"
-                placeholder=" Digite seu nome..."
-                required
-              />
-            </div>
-            <div>
-              <div class="input-esquerda"><label class="negrito" for="Sobrenome">Sobrenome: </label></div>
-              <input
-                class="input-padrao"
-                id="nome"
-                type="text"
-                maxlength="30"
-                placeholder=" Digite seu Sobrenome..."
-                required
-              />
-            </div>
-            <div>
-             <div class="input-esquerda"> <label class="negrito" for="CPF">CPF: (Apenas números)</label></div>
-              <input
-                class="input-padrao"
-                id="CPF"
-                type="int"
-                maxlength="11"
-                placeholder="00000000000"
-                required
-              />
-            </div>
-            <div>
-             <div class="input-esquerda">
-              <label class="negrito" for="email">E-mail: </label></div>
-              <input
-                class="input-padrao"
-                id="email"
-                type="text"
-                maxlength="40"
-                placeholder=" Digite seu E-mail."
+                placeholder=" Digite seu nome completo."
                 required
               />
             </div>
@@ -150,6 +116,18 @@
             </div>
             <div>
               <div class="input-esquerda"> 
+              <label class="negrito" for="codigo">Acompanhado: </label></div>
+              <input
+                class="input-padrao"
+                id="codigo"
+                type="text"
+                maxlength="50"
+                placeholder="Nome do acompanhante."
+                required
+              />
+              </div>
+            <div>
+              <div class="input-esquerda"> 
               <label class="negrito" for="codigo">Código: </label></div>
               <input
                 class="input-padrao"
@@ -160,34 +138,53 @@
                 required
               />
             </div>
-           <div id="display-flex"> Concordo com os<div id="openModal">
-              Concordo com os<span id="colorLink"> Termos de Uso</span>
-              <input type="checkbox" required/></div>
-            <button id="btn-enviar" id="Confirmar" class="negrito">Confirmar</button>
+          <div id="display-flex">
+             <div class="juntos-flex">Concordo com os <div id="openModal"><span id="colorLink">Termos de Uso</span></div>
+            <input id="123" type="checkbox" required/>
+          </div>
+            <button id="btn-enviar" id="Confirmar" class="negrito">CONFIRMAR</button>
           </div>
 
             <div id="fade" class="hide"></div>
             <div id="modal" class="hide">
               <div class="modal-header">
                 <h2>Leis Gerais de Proteção de Dados - LGPD</h2>
-                <button id="closeModal">Fechar</button>
+                <button id="closeModal">FECHAR</button>
               </div>
 
               <div class="modal-body"></div>
               <p>
-                Ao acessar a rede sem fio, você reconhece que é maior de idade,
-                leu e compreendeu e concorda em ficar vinculado a este contrato.
-              </p>
-              <p>
-                Você concorda em não usar a rede sem fio para qualquer
-                finalidade ilegal e assume total responsabilidade por seus atos.
-              </p>
-              <p>
-                A rede sem fio é fornecida “como está”, sem garantias de
-                qualquer tipo, expressas ou implícitas.
-              </p>
-            </div>
+                <div class="negrito">Art. 1º - Monitoramento das Ações dos Usuários:</div>
+
+                <div class="input-text-aling-left"> Durante o período de conexão à rede AlbrasConnect, 
+                todas as ações realizadas pelos usuários estarão sujeitas a monitoramento pela Albras, 
+                com o objetivo de garantir a segurança e a integridade da rede.
+              </p></div>
+              
+                <div class="negrito">Art. 2º - Armazenamento de Dados:</div> 
+
+                <div class="input-text-aling-left">Os dados emitidos pelos usuários nos sites acessados 
+                enquanto estiverem conectados à rede serão armazenados no banco de dados da Albras por um período de 24(vinte e quatro) horas. 
+                </p></div>
+              
+                <div class="negrito">Art. 3º - Exclusão dos Dados:</div>
+
+                <div class="input-text-aling-left"> Após o período de 24 (vinte e quatro)horas, 
+                todos os dados coletados serão automaticamente excluídos dos sistemas da Albras, salvo em casos de determinação legal que exijam a manutenção por um tempo maior. 
+              </p></div>
+              
+                <div class="negrito">Art. 4º - Consentimento do Usuário:</div>
+
+                <div class="input-text-aling-left">Ao se conectar à rede AlbrasConnect, o usuário automaticamente concorda com os termos desta lei,
+                estando ciente do monitoramento e do armazenamento temporário de seus dados. 
+              </p></div>
            
+                <div class="negrito">Art. 5º - Sigilo e Proteção de Dados:</div>
+
+                <div class="input-text-aling-left">A Albras se compromete a utilizar medidas adequadas de segurança para proteger os dados armazenados,
+                evitando acessos não autorizados ou uso indevido das informações. 
+              </p></div>
+            </div>
           </form>
         </div>
        </div>
