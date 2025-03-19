@@ -105,6 +105,7 @@
    margin-top: 2%; /*Serve para dar um espaçamento entre os campos*/
    cursor: pointer;
    border: none;
+
  }
  
  #btn-enviar{
@@ -310,9 +311,8 @@
    border-radius: 0.5rem;
    align-items: center;
    justify-content: center;/*De baixo para cima*/
-   overflow-y: auto;
-   margin-left: 2rem;
-   
+   overflow-y: auto;  /*Serve para colocar a barra de rolagem nos termos de uso*/
+
    @media(max-width:1280px) {
    height: 46rem;
   
@@ -324,6 +324,7 @@
    transition: 0.5s;
    opacity: 1;
    pointer-events: all;
+   margin:0;
  }
  
  .modal-header {
@@ -334,6 +335,7 @@
    margin-bottom: 1rem;
    padding-bottom: 1rem;
    flex-direction: column;
+   
  }
  
  .modal-body p {
