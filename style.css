@@ -310,9 +310,12 @@
    border-radius: 0.5rem;
    align-items: center;
    justify-content: center;/*De baixo para cima*/
- 
+   overflow-y: auto;
+   margin-left: 2rem;
+   
    @media(max-width:1280px) {
    height: 46rem;
+  
    }
  }
  
