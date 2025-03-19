@@ -9,7 +9,7 @@
    align-items: center;
    margin-top:4rem;
  
-   @media(min-width:1024px){
+   @media(min-width:1281px){
    display:none; /*exclui a imagem laranja nas telas de pc*/
    }
  }
@@ -17,7 +17,7 @@
  body {
    margin: 0;
    border: 0;
-   padding: 1rem; /* 1 rem é igual a 16px, ele normalmente serve para telas onde o espaçamento da fonete é maior*/
+   /*padding: 1rem;  1 rem é igual a 16px, ele normalmente serve para telas onde o espaçamento da fonete é maior*/
    font-family: 'Roboto', sans-serif; 
    /*Deixa as letras mais bonitas sem parecer que estão "Quebradas"*/
    -webkit-font-smoothing: antialiased;
@@ -30,7 +30,7 @@
    width: 39.8rem; 
    height:30rem;
  
-   @media(max-width:1024px){
+   @media(max-width:1280px){
      width: 22rem; 
      height:25rem;
    }
@@ -47,8 +47,8 @@
  
    /*ignorar valores padrões*/
    box-sizing:border-box;
-   @media(max-width:10124px) {
-     background-color: white;
+   @media(max-width:1280px) {
+     background-color: rgba(0, 0, 0, 0);
      height: 100vh;
    }
  }
@@ -59,7 +59,7 @@
    padding: 0.3%;
    margin-top:0.5rem;
  
-   @media(max-width: 1024px) {
+   @media(max-width: 1280px) {
      display: block;
       margin-top: 0.1rem; 
    }
@@ -90,8 +90,8 @@
    box-shadow: 1px 1px 5px 0px gray; /*Serve para colocar uma borda sombreada*/
    /*backdrop-filter: blur(100px); Serve para colcoar um blur na div*/
  
- @media(max-width:1024px){
-   width: 2rem;
+ @media(max-width:1280px){
+   width: 0rem;
    flex-flow: column;
    box-shadow: none;
  }
@@ -115,7 +115,7 @@
    margin-right: 1rem;
    height: 3rem;
  
-   @media(max-width:1024px) {
+   @media(max-width:1280px) {
      padding: 8px 36px;
      width: 20rem; /*Comprimento do botão*/
      margin-top: 1rem;
@@ -143,7 +143,7 @@
    background-color: #fafafa;
    transition: 1s ease; /*Tempo de cada transição ao passar o mouse em cima do botão*/
    
-   @media(max-width:1024px){
+   @media(max-width:1280px){
    align-items: center;
    justify-content: center;
    flex-direction: row;
@@ -175,7 +175,7 @@
   display: block;
   margin:0px;
  
-  @media(max-width:1024px){
+  @media(max-width:1280px){
    display: none;
   }
  }
@@ -186,7 +186,7 @@
   display:flex;
   margin-top: 0;
  
-  @media(max-width:1024px) {
+  @media(max-width:1280px) {
    height: 44.7rem;/*Altura*/
   width: 2rem;/*Comprimento*/
   display:flex;
@@ -232,7 +232,7 @@
    justify-content: left;
    align-items:center ;
  
-   @media(max-width: 1024px) {
+   @media(max-width: 1280px) {
    display: block;
    margin: 1rem 0rem 0.6rem 0rem;
    width: 7.1rem;
@@ -246,7 +246,7 @@
    width:35rem;
    margin: 1rem 1rem 0rem 2.5rem;
  
-   @media(max-width:1024px) {
+   @media(max-width:1280px) {
      display:block;
      width:20.3rem;
      height: 8.5rem;
@@ -260,7 +260,7 @@
    display:-webkit-box; 
    width: 17rem;
  
-   @media (max-width:1024px) {
+   @media (max-width:1280px) {
      display:ruby;
    }
  }
@@ -311,8 +311,8 @@
    align-items: center;
    justify-content: center;/*De baixo para cima*/
  
-   @media(max-width:1024px) {
-   height: 54rem;
+   @media(max-width:1280px) {
+   height: 46rem;
    }
  }
  
