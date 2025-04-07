@@ -39,38 +39,33 @@
               
               <img src="/img/imgConnectCell.png" alt="connectCell" id="imgConnectCell">
           <h1 class="negrito">Cadastre-se para ter acesso ao Wi-fi.</h1>
-          <!-- <label>
-            <input type="radio" name="conexao" value="visitantes" required checked> Visitantes
-          </label>
-          <label>
-            <input type="radio" name="conexao" value="Colaborador" required> Colaborador
-          </label>  -->
           </div>
-
          
             <div>
-              <div class="input-esquerda"><label class="negrito" for="nome">Nome Completo: </label></div>
+              <div class="input-esquerda"><label class="negrito" for="nome">Nome Completo / Full Name: </label></div>
               <input
                 class="input-padrao"
                 id="nome"
                 type="text"
                 maxlength="30"
-                placeholder=" Digite seu nome completo."
+                placeholder="Enter your full name."
                 required
               />
             </div>
-            <div>
+
+              <div>
            <div class="input-esquerda"> 
-              <label class="negrito" for="telefone">Telefone: </label></div>
+              <label class="negrito" for="empresa">Empresa / Company: </label></div>
               <input
                 class="input-padrao"
-                id="telefone"
+                id="empresa"
                 type="text"
-                maxlength="15"
-                placeholder="(00) 00 00000-0000 "
+                maxlength="20"
+                placeholder="Digite o nome da sua empresa "
                 required
               />
-            </div>
+            </div> 
+
              <!-- <div>
               <div class="item" class="input-esquerda"> 
                  <label class="negrito" for="E-mail">E-mail: </label></div>
@@ -83,31 +78,33 @@
                    required
                  />
                </div>  -->
+               <div>
+                <div class="input-esquerda"> 
+                <label class="negrito" for="codigo">Código: (Não obrigatório)</label></div>
+                <input
+                  class="input-padrao"
+                  id="codigo"
+                  type="text"
+                  maxlength="50"
+                  placeholder=" Enter the validation code (Not mandatory)."
+                />
+              </div>
+
             <div>
               <div class="input-esquerda"> 
-              <label class="negrito" for="codigo">Acompanhado: </label></div>
+              <label class="negrito" for="codigo">Anfitrião / Visited: </label></div>
               <input
                 class="input-padrao"
-                id="codigo"
+                id="anfitriao"
                 type="text"
                 maxlength="50"
-                placeholder="Nome do acompanhante."
+                placeholder="Host name."
                 required
               />
               </div>
-            <div>
-              <div class="input-esquerda"> 
-              <label class="negrito" for="codigo">Código: (Não obrigatório)</label></div>
-              <input
-                class="input-padrao"
-                id="codigo"
-                type="text"
-                maxlength="50"
-                placeholder=" Digite o código de validação."
-              />
-            </div>
-        
 
+            
+        
           <div id="display-flex">
              <div class="juntos-flex">Concordo com os <div id="openModal"><span id="colorLink">Termos de Uso</span></div>
             <input id="123" type="checkbox" required/>
@@ -119,10 +116,11 @@
             <div id="modal" class="hide">
               <div class="modal-header">
                 <h2>Leis Gerais de Proteção de Dados - LGPD</h2>
-                <button id="closeModal">FECHAR</button>
+                <button id="closeModal">VOLTAR</button>
               </div>
 
               <div class="modal-body"></div>
+
               <p>
                 <div class="negrito">Art. 1º - Monitoramento das Ações dos Usuários:</div>
 

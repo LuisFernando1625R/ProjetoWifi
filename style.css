@@ -68,6 +68,7 @@ div {
 
   @media (max-width: 1280px) {
     display: block;
+    margin-bottom:0%;
    
   }
 }
