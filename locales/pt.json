@@ -1,0 +1,50 @@
+{
+    "mainTitle": "Cadastre-se para ter acesso ao Wi-Fi.",
+  
+    "nameField": "Nome completo",
+    "placeholderName": "Seu nome completo",
+  
+    "companyField": "Empresa",
+    "placeholderCompany": "Nome da sua empresa",
+  
+    "codeField": "Código (não obrigatório)",
+    "placeholderCode": "Código para aprovação direta",
+  
+    "visitedField": "Anfitrião",
+    "placeholderVisited": "Anfitrião da visita",
+  
+    "termsOfUser_part1": "Concordo com os ",
+    "termsOfUser_part2": "Termos de Uso",
+  
+    "formSendBtn": "CONFIRMAR",
+  
+    "lgpdTitle": "Lei Geral de Proteção de Dados - LGPD",
+  
+    "lgpdClose": "VOLTAR",
+  
+    "art1Title": "Art. 1º - Monitoramento das ações dos usuários:",
+    "art1": "Durante o período de conexão à rede AlbrasConnect, todas as ações realizadas pelos usuários estarão sujeitas a monitoramento pela Albras, com o objetivo de garantir a segurança e a integridade da rede.",
+  
+    "art2Title": "Art. 2º - Armazenamento de dados:",
+    "art2": "Os dados emitidos pelos usuários nos sites acessados enquanto estiverem conectados à rede serão armazenados no banco de dados da Albras por um período de 24 (vinte e quatro) horas.",
+  
+    "art3Title": "Art. 3º - Exclusão dos dados:",
+    "art3": "Após o período de 24 (vinte e quatro) horas, todos os dados coletados serão automaticamente excluídos dos sistemas da Albras, salvo em casos de determinação legal que exijam a manutenção por um tempo maior.",
+  
+    "art4Title": "Art. 4º - Consentimento do usuário:",
+    "art4": "Ao se conectar à rede AlbrasConnect, o usuário automaticamente concorda com os termos desta lei, estando ciente do monitoramento e do armazenamento temporário de seus dados.",
+  
+    "art5Title": "Art. 5º - Sigilo e proteção de dados:",
+    "art5": "A Albras se compromete a utilizar medidas adequadas de segurança para proteger os dados armazenados, evitando acessos não autorizados ou uso indevido das informações.",
+  
+    "msgModalCloseBtn": "FECHAR",
+  
+    "msgModalTitleRefused": "Conexão recusada",
+    "msgModalBodyRefused": "Campo(s) inválido(s)",
+  
+    "msgModalTitlePending": "Conexão pendente",
+    "msgModalBodyPending": "Pedido de conexão enviado, aguarde aprovação.",
+  
+    "msgModalTitleOk": "Conexão aceita",
+    "msgModalBodyOk": "Pedido de conexão aceito. Em instantes, você será redirecionado."
+}
