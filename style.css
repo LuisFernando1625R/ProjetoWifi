@@ -220,7 +220,7 @@ input:houver {
       justify-content: center;
     }
   }
-  #LGPD {
+  .LGPD {
     margin-bottom:6rem;
   }
 
@@ -329,7 +329,7 @@ input:houver {
     pointer-events: all;
     /* margin: 0; */
   }
-  #modal-header {
+  .modal-header {
     margin-top: 5rem;
   }
 
@@ -345,10 +345,6 @@ input:houver {
     @media(max-width:1280px) {
       justify-content: center;
     }
-  }
-
-  .modal-body p {
-     margin-bottom: 1rem; 
   }
 
   /*Esta escondendo o modal e impossibilitando o clique fora do modal*/
