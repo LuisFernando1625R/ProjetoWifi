@@ -3,16 +3,19 @@
   width: 25rem;
   margin-top: 10rem;
 }
+
 #imgConnectCell {
-  height: 8rem; /*Tamanho das imagem laranja*/
+  height: 8rem;
+  /*Tamanho das imagem laranja*/
   /*width:13rem;Largura da imagem laranja*/
   align-items: center;
   /* margin-top:4rem; */
-
   @media (min-width: 1281px) {
-    display: none; /*exclui a imagem laranja nas telas de pc*/
+      display: none;
+      /*exclui a imagem laranja nas telas de pc*/
   }
 }
+
 body {
   height: 100vh;
   margin: 0;
@@ -24,38 +27,40 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-main{
-  height:100%;
-  display:flex;
-  align-items:center;
+main {
+  /* height:100%; */
+  display: flex;
+  align-items: center;
 }
+
 form {
   text-align: center;
   justify-content: center;
   align-items: center;
   width: 39.8rem;
   height: 30rem;
-
   @media (max-width: 1280px) {
-    width: 22rem;
-    height: 25rem;
+      width: 22rem;
+      height: 25rem;
   }
 }
 
 #backgroundSystem {
   background-image: url("");
   background-repeat: no-repeat;
-  background-size: cover; /*Faz com que a imagem ocupe todo o espaço da tela*/
+  background-size: cover;
+  /*Faz com que a imagem ocupe todo o espaço da tela*/
   height: 100vh;
-  justify-content: center; /*De baixo para cima*/
-  display: flex; /*Pode colocar um item um do lado do outro*/
+  justify-content: center;
+  /*De baixo para cima*/
+  display: flex;
+  /*Pode colocar um item um do lado do outro*/
   flex-direction: column;
-
   /*ignorar valores padrões*/
   box-sizing: border-box;
   @media (max-width: 1280px) {
-    background-color: rgba(0, 0, 0, 0);
-    height: 100vh;
+      background-color: rgba(0, 0, 0, 0);
+      height: 100vh;
   }
 }
 
@@ -64,32 +69,30 @@ div {
   margin: auto;
   width: 89%;
   padding: 0.3%;
-
-
   @media (max-width: 1280px) {
-    display: block;
-    margin-bottom:0%;
-  
-   
+      display: block;
+      margin-bottom: 0%;
   }
 }
+
 h1 {
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 0.5rem;
   animation-delay: 10ms;
 }
-h2 {
-  margin-top: 3rem;
 
-  @media(max-width:1280px) {
-  margin-top: 6rem;
+h2 {
+  /* margin-top: 3rem; */
+  @media(max-width: 1280px) {
+      /* margin-top: 6rem; */
   }
 }
 
 h6 {
   text-align: right;
 }
+
 .input-text-aling-left123 {
   margin-bottom: 3rem;
 }
@@ -101,264 +104,249 @@ input:houver {
 .main-container {
   padding: 0%;
   width: 80rem;
-   height: 55rem; 
+  height: 55rem;
   /* background-color: rgba(250, 241, 241, 0.534); */
   display: flex;
-  align-items: center; /*Serve para colocar o texto no centro*/
+  align-items: center;
+  /*Serve para colocar o texto no centro*/
   /* justify-content: center; */
-  border-radius: 15px; /*Serve para colocar uma borda arredondada*/
-  box-shadow: 1px 1px 5px 0px gray; /*Serve para colocar uma borda sombreada*/
+  border-radius: 15px;
+  /*Serve para colocar uma borda arredondada*/
+  box-shadow: 1px 1px 5px 0px gray;
+  /*Serve para colocar uma borda sombreada*/
   /*backdrop-filter: blur(100px); Serve para colcoar um blur na div*/
-   margin-top: 3rem; 
+  margin-top: 3rem;
   margin-bottom: 3rem;
-
   @media (max-width: 1280px) {
-    height: 54.8rem;
-    width: 100%;
-    flex-flow: column;
-    box-shadow: none;
-    margin-top: 0rem;
+      height: 54.8rem;
+      width: 100%;
+      flex-flow: column;
+      box-shadow: none;
+      margin-top: 0rem;
   }
-
   button {
-    padding: 8px 120px;
-    border-radius: 0.3rem;
-    background-color: #ec6f01;
-    color: white; /*cor da letra de dentro do botão*/
-    transition: 1.1s ease;
-    margin-top: 2%; /*Serve para dar um espaçamento entre os campos*/
-    cursor: pointer;
-    border: none;
+      padding: 8px 120px;
+      border-radius: 0.3rem;
+      background-color: #ec6f01;
+      color: white;
+      /*cor da letra de dentro do botão*/
+      transition: 1.1s ease;
+      margin-top: 2%;
+      /*Serve para dar um espaçamento entre os campos*/
+      cursor: pointer;
+      border: none;
   }
-
   #btn-enviar {
-    margin-top: 2rem;
-    padding: 8px 36px;
-    width: 20rem; /*10.5rem*/
-    margin-bottom: 2rem;
-    margin-right: 1rem;
-    height: 3rem;
-
-    @media (max-width: 1280px) {
+      margin-top: 2rem;
       padding: 8px 36px;
-      width: 20rem; /*Comprimento do botão*/
-      margin-top: 1rem;
-      margin-right: 0;
-      margin-bottom: 0;
-    }
+      width: 20rem;
+      /*10.5rem*/
+      margin-bottom: 2rem;
+      margin-right: 1rem;
+      height: 3rem;
+      @media (max-width: 1280px) {
+          padding: 8px 36px;
+          width: 20rem;
+          /*Comprimento do botão*/
+          margin-top: 1rem;
+          margin-right: 0;
+          margin-bottom: 0;
+      }
   }
-
   span {
-    color: rgb(58, 58, 253);
-    text-decoration: underline;
-    cursor: pointer;
-    margin-right: 5px;
+      color: rgb(58, 58, 253);
+      text-decoration: underline;
+      cursor: pointer;
+      margin-right: 5px;
   }
-
   .negrito {
-    font-weight: bold; /*Serve para colocar as letras em negrito*/
+      font-weight: bold;
+      /*Serve para colocar as letras em negrito*/
   }
-
   .input-padrao {
-    height: 3rem;
-    width: 35rem;
-    /* padding: 10px 150px; */
-    border-radius: 0.3rem;
-    background-color: #fafafa;
-    transition: 1s ease; /*Tempo de cada transição ao passar o mouse em cima do botão*/
-
-    @media (max-width: 1280px) {
-      align-items: center;
-      justify-content: center;
-      flex-direction: row;
-      width: 18rem;
-      height: 2rem;
-    }
+      height: 3rem;
+      width: 35rem;
+      /* padding: 10px 150px; */
+      border-radius: 0.3rem;
+      background-color: #fafafa;
+      transition: 1s ease;
+      /*Tempo de cada transição ao passar o mouse em cima do botão*/
+      @media (max-width: 1280px) {
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+          width: 18rem;
+          height: 2rem;
+      }
   }
   .input-esquerda {
-    float: left;
-    width: auto;
-    display: flex;
-    margin-left: 5px;
-  }
-
-  .input-text-aling-left {
-    text-align: left;
-  }
-
-  input:hover {
-    border-color: #ea580c;
-  }
-
-  .container-infos {
-    /*DinoAventura*/
-    background-color: #ec6f01;
-    height: 55rem; /*Altura da cor*/
-    width: 45rem; /*Comprimento da cor*/
-    display: flex;
-    border-radius: 15px 0px 0px 15px;
-    display: block;
-    margin: 0px;
-
-    @media (max-width: 1280px) {
-      display: none;
-    }
-  }
-
-  .container-form {
-    /*Cadastro*/
-    height: 45.5rem; /*Altura*/
-    width: 40rem; /*Comprimento*/
-    display: flex;
-    margin-top: 0.1px;
-    align-items: center;
-
-    @media (max-width: 1280px) {
-      height: 38rem; /*Altura*/
-      width: 2rem; /*Comprimento*/
+      float: left;
+      width: auto;
       display: flex;
-      justify-content: center;
-    }
+      margin-left: 5px;
+  }
+  .input-text-aling-left {
+      text-align: left;
+  }
+  input:hover {
+      border-color: #ea580c;
+  }
+  .container-infos {
+      /*DinoAventura*/
+      background-color: #ec6f01;
+      height: 55rem;
+      /*Altura da cor*/
+      width: 45rem;
+      /*Comprimento da cor*/
+      display: flex;
+      border-radius: 15px 0px 0px 15px;
+      display: block;
+      margin: 0px;
+      @media (max-width: 1280px) {
+          display: none;
+      }
+  }
+  .container-form {
+      /*Cadastro*/
+      height: 45.5rem;
+      /*Altura*/
+      width: 40rem;
+      /*Comprimento*/
+      display: flex;
+      margin-top: 0.1px;
+      align-items: center;
+      @media (max-width: 1280px) {
+          height: 38rem;
+          /*Altura*/
+          width: 2rem;
+          /*Comprimento*/
+          display: flex;
+          justify-content: center;
+      }
   }
   .LGPD {
-    margin-bottom:6rem;
+      margin-bottom: 6rem;
   }
-
   /*/////////////////////////////////////////////////////////////////////////////*/
-
   /*Configuração do modal*/
-
   /* O * serve para pegar todo o HTML e as tags abaixo estão resentando as configuração impostas pelo HTML, para que possamos criar as nossa configuração do zero.*/
-
   h1 {
-    padding-bottom: 1rem;
+      padding-bottom: 1rem;
   }
-
   #openModal {
-    display: flex;
-    width: auto;
-    justify-content: left;
-    align-items: center;
-
-    @media (max-width: 1280px) {
-      display: block;
-      margin: 1rem 0rem 0.6rem 0rem;
-      width: 7.1rem;
-    }
+      display: flex;
+      width: auto;
+      justify-content: left;
+      align-items: center;
+      @media (max-width: 1280px) {
+          display: block;
+          margin: 1rem 0rem 0.6rem 0rem;
+          width: 7.1rem;
+      }
   }
-
   #display-flex {
-    display: block;
-    justify-content: left;
-    align-items: center;
-    width: 35rem;
-    margin: 1rem 1rem 0rem 2.5rem;
-
-    @media (max-width: 1280px) {
       display: block;
-      width: 20.3rem;
-      height: 5rem;
-      margin: 0.5rem 0.5rem 0rem 0.5rem;
-      justify-content: center;
-      align-tens: center;
-    }
+      justify-content: left;
+      align-items: center;
+      width: 35rem;
+      margin: 1rem 1rem 0rem 2.5rem;
+      @media (max-width: 1280px) {
+          display: block;
+          width: 20.3rem;
+          height: 5rem;
+          margin: 0.5rem 0.5rem 0rem 0.5rem;
+          justify-content: center;
+          align-tens: center;
+      }
   }
-
   .juntos-flex {
-    display: -webkit-box;
-    width: 17rem;
-
-    @media (max-width: 1280px) {
-      display: ruby;
-    }
+      display: -webkit-box;
+      width: 17rem;
+      @media (max-width: 1280px) {
+          display: ruby;
+      }
   }
-
   span:hover {
-    opacity: 1;
+      opacity: 1;
   }
-
   #close-modal,
   #modal {
-    transition: 0.5s;
-    opacity: 1;
-    pointer-events: all;
+      transition: 0.5s;
+      opacity: 1;
+      pointer-events: all;
   }
-
   #close-modal {
-    position: fixed;
-    top: 0;
-    right: 0%;
-    color: black;
-    background-color: #ea580c;
-    z-index: 5; /*Serve para colocar o botão na frente dos outros elementos, impossibilitando que o usuário clique em alguma coisa fora do model*/
+      position: fixed;
+      top: 0;
+      right: 0%;
+      color: black;
+      background-color: #ea580c;
+      z-index: 5;
+      /*Serve para colocar o botão na frente dos outros elementos, impossibilitando que o usuário clique em alguma coisa fora do model*/
   }
-
   #fade {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.6);
-    z-index: 5;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.6);
+      z-index: 5;
   }
-
   #modal {
-    height: 48.5rem;
-    position: fixed;
-  background: linear-gradient(to top, #e5e5e5, #d4d4d4);
-  box-shadow: 1px 1px 5px 0px;
-  z-index: 10;
-  width: 50rem;
-  max-width: 95%; /*Serve para colocar um limite de 90%, caso a tela seja menor de 500px ele deixa em 90%*/
-  padding: 1.2rem;
-  border-radius: 0.5rem;
-  align-items: center;
-  overflow-y: auto;
-
-  @media(min-width:1280px) {
-  margin-left: 15rem;
+      height: 100%;
+      position: fixed;
+      background: linear-gradient(to top, #e5e5e5, #d4d4d4);
+      box-shadow: 1px 1px 5px 0px;
+      z-index: 10;
+      width: 50rem;
+      max-width: 95%;
+      /*Serve para colocar um limite de 90%, caso a tela seja menor de 500px ele deixa em 90%*/
+      padding: 1.2rem;
+      border-radius: 0.5rem;
+      align-items: center;
+      overflow-y: auto;
+      @media(min-width: 1280px) {
+          margin-left: 15rem;
+      }
   }
-  }
- 
-
   #fade,
   #modal {
-    transition: 0.5s;
-    opacity: 1;
-    pointer-events: all;
-    /* margin: 0; */
+      transition: 0.5s;
+      opacity: 1;
+      pointer-events: all;
+      /* margin: 0; */
   }
   .modal-header {
-    margin-top: 5rem;
+      margin-top: 5rem;
   }
-
   .modal-header {
-    display: flex; /*Serve para deixar um item ao lado do outro*/
-    justify-content: space-between; /*Serve para deixar espaçamento entre os itens*/
-    align-items: center;
-    border-bottom: 1px solid #acacac; /*Serve parea colcoar um borda entre o titulo do modal e o conteudo*/
-    margin-bottom: 1rem;
-    padding-bottom: 1rem;
-    flex-direction: column;
-
-    @media(max-width:1280px) {
-      justify-content: center;
-    }
+      display: flex;
+      /*Serve para deixar um item ao lado do outro*/
+      justify-content: space-between;
+      /*Serve para deixar espaçamento entre os itens*/
+      align-items: center;
+      border-bottom: 1px solid #acacac;
+      /*Serve parea colcoar um borda entre o titulo do modal e o conteudo*/
+      margin-bottom: 1rem;
+      padding-bottom: 1rem;
+      flex-direction: column;
+      @media(max-width: 1280px) {
+          justify-content: center;
+      }
   }
-
   /*Esta escondendo o modal e impossibilitando o clique fora do modal*/
   #modal.hide,
   #fade.hide {
-    opacity: 0;
-    pointer-events: none;
+      opacity: 0;
+      pointer-events: none;
   }
-
   /*Fazendo com que o modal venha de cima para baixo*/
   #modal.hide {
-    top: 0px;
+      top: 0px;
   }
 }
+
 
 /*************************************************************************************************************/
 
@@ -387,8 +375,8 @@ input:houver {
 }
 
 #error_mensagem .modal-content h2 {
-margin-top: 0;
-font-size: 18px;
+  margin-top: 0;
+  font-size: 18px;
 }
 
 #error_mensagem .modal-content p {
@@ -405,10 +393,12 @@ font-size: 18px;
   padding: 8px 120px;
   border-radius: 0.3rem;
   background-color: #ec6f01;
-  color: white; /*cor da letra de dentro do botão*/
+  color: white;
+  /*cor da letra de dentro do botão*/
   font-weight: 800;
   transition: 1.1s ease;
-  margin-top: 2%; /*Serve para dar um espaçamento entre os campos*/
+  margin-top: 2%;
+  /*Serve para dar um espaçamento entre os campos*/
   cursor: pointer;
   border: none;
 }
