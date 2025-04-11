@@ -16,10 +16,14 @@
     }
 }
 
-body {
-    height: 100vh;
+* {
     margin: 0;
     border: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
     /*padding: 1rem;  1 rem é igual a 16px, ele normalmente serve para telas onde o espaçamento da fonete é maior*/
     font-family: "Roboto", sans-serif;
     /*Deixa as letras mais bonitas sem parecer que estão "Quebradas"*/

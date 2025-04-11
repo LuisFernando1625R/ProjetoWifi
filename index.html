@@ -1,171 +1,140 @@
 <!DOCTYPE html>
 
 <html>
-  
-  <head>
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
-    <meta charset="utf-8" >
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
 
-    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> <!--Biblioteca do carosel-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <link rel="preconnect" href="http://fonts.googleapis.com">  <!-- Serve para não deixar a fonte "feia" como se estivesse bugada -->
-    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin> 
+    <link rel="stylesheet" href="http://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Biblioteca do carosel-->
+
+    <link rel="preconnect" href="http://fonts.googleapis.com">
+    <!-- Serve para não deixar a fonte "feia" como se estivesse bugada -->
+    <link rel="preconnect" href="http://fonts.gstatic.com" crossorigin>
     <link href="http://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" type="text/css" href="style.css" media="screen" >
+
+    <link rel="stylesheet" type="text/css" href="style.css" media="screen">
     <link rel="shortcut icon" href="/img/Icone GLPI.ico" type="image/x-icon">
 
 
     <script src="scripts.js" defer></script>
     <title>UniFi Connect Portal</title>
-  
-  </head>
 
-  <body>
+</head>
+
+<body>
     <main>
 
-      <div class="main-container">
-        <div class="container-infos">
-          <div id="albrasConnect">
-          <img id="albrasConnect" src="/img/AlbrasConnect123.png" alt="albrasConnect"><img/>
-        </div>
-      </div>
-
-
-        <div class="container-form">
-          <form id="main-form">
-
-            <div>
-              <img src="/img/imgConnectCell.png" alt="connectCell" id="imgConnectCell">
-              <h1 class="negrito" data-i18n="mainTitle">Cadastre-se para ter acesso ao Wi-fi.</h1>
-            </div>
-            
-              <div>
-                <div class="input-esquerda"><label class="negrito" for="name" data-i18n="nameField">Nome Completo / Full Name: </label></div>
-                <input
-                  data-i18n-placeholder="placeholderName"
-                  class="input-padrao"
-                  id="name"
-                  type="text"
-                  maxlength="30"
-                  placeholder="Digite seu nome completo"
-                  required
-                />
-              </div>
-
-              <div>
-                <div class="input-esquerda"> 
-                <label class="negrito" for="company" data-i18n="companyField">Empresa / Company: </label></div>
-                <input
-                  data-i18n-placeholder="placeholderCompany"
-                  class="input-padrao"
-                  id="company"
-                  type="text"
-                  maxlength="20"
-                  placeholder="Digite o nome da sua empresa"
-                  required
-                />
-              </div> 
-
-               <div>
-                  <div class="input-esquerda"> 
-                  <label class="negrito" for="code" data-i18n="codeField">Código: (Não obrigatório)</label></div>
-                  <input
-                    data-i18n-placeholder="placeholderCode"
-                    class="input-padrao"
-                    id="code"
-                    type="text"
-                    maxlength="6"
-                    placeholder="Digite o codigo para aprovacao direta, peça para o anfitrião"
-                  />
+        <div class="main-container">
+            <div class="container-infos">
+                <div id="albrasConnect">
+                    <img id="albrasConnect" src="/img/AlbrasConnect123.png" alt="albrasConnect"><img/>
                 </div>
-
-              <div>
-                <div class="input-esquerda" id="inputVisited"> 
-                <label class="negrito" for="visited" data-i18n="visitedField">Anfitrião / Visited: </label></div>
-                <input
-                  data-i18n-placeholder="placeholderVisited"
-                  class="input-padrao"
-                  id="visited"
-                  type="text"
-                  maxlength="50"
-                  placeholder="Digite o nome do anfitrião da visita"
-                  required
-                />
-              </div>
-          
-          <div id="display-flex" style="justify-self: center;">
-            <div class="juntos-flex">
-              <span data-i18n="termsOfUser_part1" style="color: black; text-decoration: none; display: inline;">Concordo com os</span>
-              
-              <span id="openModal">
-                <span id="colorLink" data-i18n="termsOfUser_part2" style="display: inline;">Termos de Uso</span>
-              </span>
-              
-              <input id="123" type="checkbox" required />
-  
             </div>
-          </div>
-            <button id="btn-enviar" id="Confirmar" class="negrito" data-i18n="formSendBtn">CONFIRMAR</button>
-          </div>
+
+
+            <div class="container-form">
+                <form id="main-form">
+
+                    <div>
+                        <img src="/img/imgConnectCell.png" alt="connectCell" id="imgConnectCell">
+                        <h1 class="negrito" data-i18n="mainTitle">Cadastre-se para ter acesso ao Wi-fi.</h1>
+                    </div>
+
+                    <div>
+                        <div class="input-esquerda"><label class="negrito" for="name" data-i18n="nameField">Nome Completo / Full Name: </label></div>
+                        <input data-i18n-placeholder="placeholderName" class="input-padrao" id="name" type="text" maxlength="30" placeholder="Digite seu nome completo" required />
+                    </div>
+
+                    <div>
+                        <div class="input-esquerda">
+                            <label class="negrito" for="company" data-i18n="companyField">Empresa / Company: </label></div>
+                        <input data-i18n-placeholder="placeholderCompany" class="input-padrao" id="company" type="text" maxlength="20" placeholder="Digite o nome da sua empresa" required />
+                    </div>
+
+                    <div>
+                        <div class="input-esquerda">
+                            <label class="negrito" for="code" data-i18n="codeField">Código: (Não obrigatório)</label></div>
+                        <input data-i18n-placeholder="placeholderCode" class="input-padrao" id="code" type="text" maxlength="6" placeholder="Digite o codigo para aprovacao direta, peça para o anfitrião" />
+                    </div>
+
+                    <div>
+                        <div class="input-esquerda" id="inputVisited">
+                            <label class="negrito" for="visited" data-i18n="visitedField">Anfitrião / Visited: </label></div>
+                        <input data-i18n-placeholder="placeholderVisited" class="input-padrao" id="visited" type="text" maxlength="50" placeholder="Digite o nome do anfitrião da visita" required />
+                    </div>
+
+                    <div id="display-flex" style="justify-self: center;">
+                        <div class="juntos-flex">
+                            <span data-i18n="termsOfUser_part1" style="color: black; text-decoration: none; display: inline;">Concordo com os</span>
+
+                            <span id="openModal">
+                <span id="colorLink" data-i18n="termsOfUser_part2" style="display: inline;">Termos de Uso</span>
+                            </span>
+
+                            <input id="123" type="checkbox" required />
+
+                        </div>
+                    </div>
+                    <button id="btn-enviar" id="Confirmar" class="negrito" data-i18n="formSendBtn">CONFIRMAR</button>
+            </div>
 
             <div id="fade" class="hide"></div>
-          
+
             <div id="modal" class="hide">
-              <div class="modal-header">
-                <h2 data-i18n="lgpdTitle">Leis Gerais de Proteção de Dados - LGPD</h2>
-                <button id="closeModal" data-i18n="lgpdClose">VOLTAR</button>
-              </div>
-              <div class="LGPD">
+                <div class="modal-header">
+                    <h2 data-i18n="lgpdTitle">Leis Gerais de Proteção de Dados - LGPD</h2>
+                    <button id="closeModal" data-i18n="lgpdClose">VOLTAR</button>
+                </div>
+                <div class="LGPD">
 
-              <p>
-                <div class="negrito" data-i18n="art1Title">Art. 1º - Monitoramento das Ações dos Usuários:</div>
+                    <p>
+                        <div class="negrito" data-i18n="art1Title">Art. 1º - Monitoramento das Ações dos Usuários:</div>
 
-                <div class="input-text-aling-left" data-i18n="art1"> Durante o período de conexão à rede AlbrasConnect, 
-                todas as ações realizadas pelos usuários estarão sujeitas a monitoramento pela Albras, 
-                com o objetivo de garantir a segurança e a integridade da rede.
-              </p></div>
-              
-                <div class="negrito" data-i18n="art2Title">Art. 2º - Armazenamento de Dados:</div> 
+                        <div class="input-text-aling-left" data-i18n="art1"> Durante o período de conexão à rede AlbrasConnect, todas as ações realizadas pelos usuários estarão sujeitas a monitoramento pela Albras, com o objetivo de garantir a segurança e a integridade da rede.
+                    </p>
+                    </div>
 
-                <div class="input-text-aling-left" data-i18n="art2">Os dados emitidos pelos usuários nos sites acessados 
-                enquanto estiverem conectados à rede serão armazenados no banco de dados da Albras por um período de 24(vinte e quatro) horas. 
-                </p></div>
-              
-                <div class="negrito" data-i18n="art3Title">Art. 3º - Exclusão dos Dados:</div>
+                    <div class="negrito" data-i18n="art2Title">Art. 2º - Armazenamento de Dados:</div>
 
-                <div class="input-text-aling-left" data-i18n="art3"> Após o período de 24 (vinte e quatro)horas, 
-                todos os dados coletados serão automaticamente excluídos dos sistemas da Albras, salvo em casos de determinação legal que exijam a manutenção por um tempo maior. 
-              </p></div>
-              
-                <div class="negrito" data-i18n="art4Title">Art. 4º - Consentimento do Usuário:</div>
+                    <div class="input-text-aling-left" data-i18n="art2">Os dados emitidos pelos usuários nos sites acessados enquanto estiverem conectados à rede serão armazenados no banco de dados da Albras por um período de 24(vinte e quatro) horas.
+                        </p>
+                    </div>
 
-                <div class="input-text-aling-left" data-i18n="art4">Ao se conectar à rede AlbrasConnect, o usuário automaticamente concorda com os termos desta lei,
-                estando ciente do monitoramento e do armazenamento temporário de seus dados. 
-              </p></div>
-           
-                <div class="negrito" data-i18n="art5Title">Art. 5º - Sigilo e Proteção de Dados:</div>
+                    <div class="negrito" data-i18n="art3Title">Art. 3º - Exclusão dos Dados:</div>
 
-                <div class="input-text-aling-left" data-i18n="art5">A Albras se compromete a utilizar medidas adequadas de segurança para proteger os dados armazenados,
-                evitando acessos não autorizados ou uso indevido das informações. 
-              </p></div>
+                    <div class="input-text-aling-left" data-i18n="art3"> Após o período de 24 (vinte e quatro)horas, todos os dados coletados serão automaticamente excluídos dos sistemas da Albras, salvo em casos de determinação legal que exijam a manutenção por um tempo maior.
+                        </p>
+                    </div>
+
+                    <div class="negrito" data-i18n="art4Title">Art. 4º - Consentimento do Usuário:</div>
+
+                    <div class="input-text-aling-left" data-i18n="art4">Ao se conectar à rede AlbrasConnect, o usuário automaticamente concorda com os termos desta lei, estando ciente do monitoramento e do armazenamento temporário de seus dados.
+                        </p>
+                    </div>
+
+                    <div class="negrito" data-i18n="art5Title">Art. 5º - Sigilo e Proteção de Dados:</div>
+
+                    <div class="input-text-aling-left" data-i18n="art5">A Albras se compromete a utilizar medidas adequadas de segurança para proteger os dados armazenados, evitando acessos não autorizados ou uso indevido das informações.
+                        </p>
+                    </div>
+                </div>
+                </form>
             </div>
-          </form>
         </div>
-       </div>
 
-       <!-- Modal de Erro -->
-      <div id="error_mensagem">
-        <div class="modal-content">
-          <h2 id="error_title"></h2>
-          <p id="error_texto"></p>
-          <button id="error_btn" onclick="fecharModal()" data-i18n="msgModalCloseBtn">Fechar</button>
+        <!-- Modal de Erro -->
+        <div id="error_mensagem">
+            <div class="modal-content">
+                <h2 id="error_title"></h2>
+                <p id="error_texto"></p>
+                <button id="error_btn" onclick="fecharModal()" data-i18n="msgModalCloseBtn">Fechar</button>
+            </div>
         </div>
-      </div>
 
     </main>
-  </body>
+</body>
 
 </html>
